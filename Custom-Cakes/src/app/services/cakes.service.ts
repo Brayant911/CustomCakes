@@ -5,5 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class CakesService {
 
-  constructor() { }
+  constructor(private router: Router) {}
+  
+  navigateToNoteView() {
+  }
 }
