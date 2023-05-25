@@ -8,5 +8,6 @@ export class CakesService {
   constructor(private router: Router) {}
   
   navigateToNoteView() {
+    this.router.navigate([""]);
   }
 }
