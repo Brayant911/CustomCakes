@@ -1,0 +1,50 @@
+<div id="add-notes">
+    <form (ngSubmit)="onSubmit(addForm)" #addForm="ngForm">
+        <mat-form-field class="input-field" appearance="legacy">
+            <input matInput name="notes.name" required minlength="3" [(ngModel)]="addnotes.name" type="text"
+                #notes.name="ngModel" placeholder="Name">
+            <mat-error *ngIf="addnotes.name.errors?.required">
+                Fruit name is required
+            </mat-error>
+            <mat-error *ngIf="addnotes.name.errors?.minlength">
+                Fruit Name Minimum Length is {{addnotes.errors?.notes.length?.requiredLength}}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="input-field" appearance="legacy">
+            <input matInput required name="price" #price=ngModel [(ngModel)]="addnotes.price" type="text"
+                pattern="^\d*(\.\d{0,2})?$" placeholder="Price ($)0.00">
+            <mat-error *ngIf="addnotes.errors?.required">
+                Fruit price is required
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="input-field" appearance="legacy">
+            <input matInput required name="unit" #unit=ngModel [(ngModel)]="addnotes.unit" type="text"
+                placeholder="Unit (pound / piece)">
+            <mat-error *ngIf="addnotes.errors?.required">
+                Fruit unit is required
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Nutrients</mat-label>
+            <mat-select id="nutrient" name="nutrient" [(ngModel)]="addnotes.nutrients" multiple>
+                <mat-option *ngFor="let add notes" [value]="add.notes">{{add.notes}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Benefits</mat-label>
+            <mat-select id="benefit" name="benefit" [(ngModel)]="addnotes.benefits" multiple>
+                <mat-option *ngFor="let add notes" [value]="add.notes">{{add.notes}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <div>
+            <button color="primary" mat-raised-button type="submit" [disabled]="!addForm.valid">
+                Add
+            </button>
+        </div>
+
+    </form>
+</div>
