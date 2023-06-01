@@ -4,11 +4,11 @@ import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
-export class NoteRouterService {
+export class CakeRouterService {
 
   constructor(private router: Router) { }
 
-  navigateToNoteView() {
+  navigateToOrderView() {
     this.router.navigate([""]);
 }
 

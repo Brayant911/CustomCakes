@@ -8,5 +8,8 @@ import { Component ,Input ,OnInit,} from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 
-export class DashboardComponent {}
+export class DashboardComponent {
+
+  constructor () { }
+}
   
