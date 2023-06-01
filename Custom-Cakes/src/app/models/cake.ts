@@ -8,5 +8,6 @@ export type Cake = {
     content?:string;
     image?: string;
     
+    
 }
 

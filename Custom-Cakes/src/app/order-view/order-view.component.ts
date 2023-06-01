@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Cake } from '../models/cake';
-import { CakeService } from '../services/cakes.service';
+import { CakeService } from '../../services/cakes.service';
 
 
 @Component({

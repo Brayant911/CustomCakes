@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  title= "Custom-Cakes"
+title = "CustomCakes";
+
+ constructor () {}
 
 }

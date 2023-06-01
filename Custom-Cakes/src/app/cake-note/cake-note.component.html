@@ -1,0 +1,16 @@
+<p>cake-note works!</p>
+
+
+<mat-card (mouseenter) = "displayActions()" (mouseleave)="hideActions()" matRipple class="cake-note-card">
+    <img src="../../assets/cakes/{{cake?.title}}.jpg" alt="" width="280px" height="250px">
+<h3>{{cake?.title}}</h3>
+<p>{{cake?.content}}</p>
+<p>{{cake?.image</p>
+<mat-card-actions *ngIf="actionsDisplayed" class="cake-note-actions">
+<button color="primary" mat-icon-button><mat-icon>bookmark</mat-icon></button>
+     <button color="primary" mat-icon-button><mat-icon>edit</mat-icon></button>
+     <button color="danger" mat-icon-button><mat-icon>delete</mat-icon></button>
+     <button color="accent" mat-icon-button><mat-icon>favorite</mat-icon></button>
+   </mat-card-actions>
+ </mat-card>
+

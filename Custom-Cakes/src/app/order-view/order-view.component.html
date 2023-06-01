@@ -1,1 +1,11 @@
-<p>order-view works!</p>
+<div class="container">
+    <app-cake-add></app-cake-add>
+    <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
+    <!-- traverse the `notes` array using `*ngFor` directive and render `Note` component for each note
+         traversed, passing the `note` element of the array as input to `Note` component. -->
+     <app-cake-note *ngFor = "let cake of notes" [cake]="cake"></app-cake-note> 
+    </div>
+    
+    
+    
+    
