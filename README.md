@@ -15,6 +15,9 @@
 
 -CSS
 
--Angular
+-Angular/material
 
 -Javascript 
+
+-Typescript 
+
