@@ -1,6 +1,22 @@
-header {
+#header {
     background-color: navy;
     padding: 10x;
     color:aliceblue;
     font-family: calibri, 'Trebuchet MS', sans-serif;
+    height: 40%;
+    background-image: url("../../assets/unnamed.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#icons {
+    position: absolute;
+    right: 10px;
+    color: white;
+}
+
+#icons > * {
+    margin-right: 15px;
+}
+

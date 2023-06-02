@@ -1,8 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NoteViewComponent } from './note-view/note-view.component';
+import { NoteAddComponent } from './note-add/note-add.component';
+import { SearchComponent } from './search/search.component';
+import { NoteComponent } from './note/note.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatRippleModule} from '@angular/material/core';
@@ -17,36 +24,29 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort'; 
+import { HttpClientModule } from '@angular/common/http';
 import { MatOptionModule } from '@angular/material/core';
 import { MatChipsModule } from '@angular/material/chips';
+import { AppRoutingModule } from './app-routing.module';
 import { MatInputModule} from '@angular/material/input';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { AppComponent } from './app.component';
-import { DashboardComponent} from './dashboard/dashboard.component';
-import { OrderViewComponent } from './order-view/order-view.component';
-import { HeaderComponent } from './header/header.component';
-import { SearchComponent } from './search/search.component';
-import { RegistrationComponent } from './registration/registration.component';
+import { NoteEditComponent } from './note-edit/note-edit.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-// import { NoteComponent } from './note/note.component';
-import { CakeNoteComponent } from './cake-note/cake-note.component';
-import { CakeAddComponent } from './cake-add/cake-add.component';
-import { CakeEditComponent } from './cake-edit/cake-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DashboardComponent,
-    OrderViewComponent,
-    PageNotFoundComponent,
+    NoteAddComponent,
+    NoteViewComponent,
     SearchComponent,
-    // NoteComponent,
-    CakeNoteComponent,
-    CakeAddComponent,
-    CakeEditComponent,
-    RegistrationComponent
+    NoteComponent,
+    RegistrationComponent,
+    NoteEditComponent,
+    PageNotFoundComponent,
+    // NavigationPanelComponent,
+    // TablePanelComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -56,23 +56,23 @@ import { CakeEditComponent } from './cake-edit/cake-edit.component';
     MatFormFieldModule,
     MatCardModule,
     MatRippleModule,
+    MatToolbarModule,
     MatIconModule,
     LayoutModule,
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
     MatInputModule,
-    MatSlideToggleModule,
-    MatToolbarModule,
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
     HttpClientModule,
-    HttpClientModule,
     MatOptionModule,
     MatChipsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

@@ -2,7 +2,7 @@
   "cakes": [
     {
       "orderId": 1,
-      "title": "sample-cake",
+      "title": "weddingcake",
       "specialInstructions":"none",
       "customerName": "Brayan",
       "orderDay":"May-30 ",

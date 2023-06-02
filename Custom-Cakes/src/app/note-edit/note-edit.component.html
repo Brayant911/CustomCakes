@@ -1,14 +1,13 @@
-<div id="cake-edit-panel">
+<div id="edit-note-panel">
     <mat-form-field class="note-input-fields">
         <mat-label>Note Title</mat-label>
-        <input type="text" matInput [(ngModel)]="cake.title">
+        <input type="text" matInput [(ngModel)]="note.title">
     </mat-form-field>
     <mat-form-field class="note-input-fields">
         <mat-label>Note Title</mat-label>
-        <textarea rows="5" matInput [(ngModel)]="cake.content"></textarea>
+        <textarea rows="5" matInput [(ngModel)]="note.content"></textarea>
     </mat-form-field>
     <button id="edit-button" (click)="saveNote()">
     <mat-icon>save</mat-icon>
 </button> 
 </div>
-

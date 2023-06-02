@@ -1,0 +1,17 @@
+<mat-card (mouseenter) = "displayActions()" (mouseleave)="
+  hideActions()" matRipple class="notecard">
+  <img src="../../assets/cake/{{note?.title}}.jpg" alt="" width="280px" height="250px"
+    class="inner-class-content">
+  <h3>{{note?.title}}</h3>
+  <p>{{note?.category}}</p>
+  <p>{{note?.orderDay}}</p>
+  <mat-card-actions *ngIf="actionsDisplayed" class="note-actions">
+  <button color="primary" mat-icon-button><mat-icon>bookmark</mat-icon></button>
+        <button color="primary" mat-icon-button><mat-icon>edit</mat-icon></button>
+        <button color="danger" mat-icon-button><mat-icon>delete</mat-icon></button>
+        <button color="accent" mat-icon-button><mat-icon>favorite</mat-icon></button>
+      </mat-card-actions>
+    </mat-card>
+
+
+

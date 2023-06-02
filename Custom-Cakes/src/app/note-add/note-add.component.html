@@ -1,0 +1,20 @@
+<!-- <h2>Order Your Cake</h2> -->
+<div id="note-add-panel">
+    <mat-form-field class="input-field">
+       
+        <input matInput [(ngModel)]="note.title" type="text" placeholder="Cake Title">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="input-field">
+        <input matInput [(ngModel)]="note.orderDay" type="date" placeholder="Cake OrderDay">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="input-field">
+        <input matInput [(ngModel)]="note.category" type="text" placeholder="Category">
+    </mat-form-field>
+    <br>
+     <button color="primary" mat-fab type="button" (click)="noteAdd()">
+        <mat-icon>add</mat-icon>
+    </button>
+</div> 
+
