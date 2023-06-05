@@ -6,12 +6,186 @@
     give the soldier a surprise, maybe a cake or a treat ? How will she/he send it to him ? This website offers
     deliveries and tracks when it's being sent and when it was received.</p>
 <h2>Meet the owner</h2>
-<img src="https://scontent.fsac1-2.fna.fbcdn.net/v/t1.15752-9/330530884_712587147212306_5658427361020616441_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=9QkIQGXd_OoAX_Yoj9g&_nc_ht=scontent.fsac1-2.fna&oh=03_AdSYpU3bMZrnMGN3qEw502WhlOV8Z7KbHRpeINJ3RyHHOA&oe=64A4C442" alt="Trulli" width="500" height="333">
+<img src="https://scontent.fsac1-2.fna.fbcdn.net/v/t1.15752-9/330530884_712587147212306_5658427361020616441_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=9QkIQGXd_OoAX_Yoj9g&_nc_ht=scontent.fsac1-2.fna&oh=03_AdSYpU3bMZrnMGN3qEw502WhlOV8Z7KbHRpeINJ3RyHHOA&oe=64A4C442"
+    alt="Trulli" width="500" height="333">
 <br>
 <br>
 <br>
 <br>
 
+
+<style>
+    * body {
+        font-family: Arial;
+        margin: 0 auto;
+        /* Center website */
+        max-width: 800px;
+        /* Max width */
+        padding: 20px;
+    }
+
+    .heading {
+        box-sizing: border-box;
+        font-size: 25px;
+        margin-right: 25px;
+    }
+
+    .fa {
+        font-size: 25px;
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    /* Three column layout */
+    .side {
+        float: left;
+        width: 15%;
+        margin-top: 10px;
+    }
+
+    .middle {
+        margin-top: 10px;
+        float: left;
+        width: 70%;
+    }
+
+    /* Place text to the right */
+    .right {
+        text-align: right;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* The bar container */
+    .bar-container {
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        color: white;
+    }
+
+    /* Individual bars */
+    .bar-5 {
+        width: 60%;
+        height: 18px;
+        background-color: #04AA6D;
+    }
+
+    .bar-4 {
+        width: 34%;
+        height: 18px;
+        background-color: #2196F3;
+    }
+
+    .bar-3 {
+        width: 10%;
+        height: 18px;
+        background-color: #00bcd4;
+    }
+
+    .bar-2 {
+        width: 4%;
+        height: 18px;
+        background-color: #ff9800;
+    }
+
+    .bar-1 {
+        width: 1%;
+        height: 18px;
+        background-color: #f44336;
+    }
+
+    /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+    @media (max-width: 400px) {
+
+        .side,
+        .middle {
+            width: 100%;
+        }
+
+        .right {
+            display: none;
+        }
+    }
+</style>
+
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.5 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+    <div class="side">
+        <div>5 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+            <div class="bar-5"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>150</div>
+    </div>
+    <div class="side">
+        <div>4 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+            <div class="bar-4"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>82</div>
+    </div>
+    <div class="side">
+        <div>3 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+            <div class="bar-3"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>15</div>
+    </div>
+    <div class="side">
+        <div>2 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+            <div class="bar-2"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>6</div>
+    </div>
+    <div class="side">
+        <div>1 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+            <div class="bar-1"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>1</div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
 <app-dashboard></app-dashboard>
 
 
@@ -23,10 +197,14 @@
 
 
 <h1>Main Location</h1>
-<iframe
+<!-- <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+<div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+        marginwidth="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=5905%20Wilshire%20Blvd,%20Los%20Angeles,%20CA%2090036+(Brayan's%20Cake)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+            href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
 
 <br>
 <br>
