@@ -31,6 +31,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatInputModule} from '@angular/material/input';
 import { NoteEditComponent } from './note-edit/note-edit.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NoteManagerComponent } from './note-manager/note-manager.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     RegistrationComponent,
     NoteEditComponent,
     PageNotFoundComponent,
+    NoteManagerComponent,
     // NavigationPanelComponent,
     // TablePanelComponent
    
@@ -68,7 +71,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MatSortModule,
     HttpClientModule,
     MatOptionModule,
-    MatChipsModule
+    MatChipsModule,
+    MatExpansionModule
     
   ],
   providers: [],

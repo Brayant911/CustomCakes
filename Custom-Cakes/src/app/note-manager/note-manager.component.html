@@ -1,0 +1,12 @@
+<div class="container">
+    <app-search id="search-note-panel" (searchTextChanged)="onSearchTextChanged($event)"></app-search>
+        <mat-expansion-panel id="add-note-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h3>Add Fruit</h3>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-note-add (noteAdded)="onNoteAdded($event)"></app-note-add>
+        </mat-expansion-panel>
+        <!-- <app-note-view id="note-list-panel" [notes]="notes"></app-note-view> -->
+</div>

@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NoteEditComponent } from './note-edit/note-edit.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+// import { NoteManagerComponent } from "./note-manager/note-manager.component";
 
 
 const routes: Routes = [
@@ -18,7 +18,12 @@ const routes: Routes = [
   },
   {
     path: "**", component: PageNotFoundComponent,
-  }
+  },
+  // {
+  //   path: "home",
+  //   component: NoteManagerComponent
+
+  // }
 ];
 
 @NgModule({

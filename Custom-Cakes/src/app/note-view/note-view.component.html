@@ -1,11 +1,19 @@
 <div class="container">
-    <app-note-add></app-note-add>
-    <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
     <!-- traverse the `notes` array using `*ngFor` directive and render `Note` component for each note
-         traversed, passing the `note` element of the array as input to `Note` component. -->
-     <app-note *ngFor = "let note of notes" [note]="note"></app-note> 
+        traversed, passing the `note` element of the array as input to `Note` component. -->
+        <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
+        <br>
+        <h2 style="text-align: center;">See Our Designs</h2>
+        <app-note *ngFor = "let note of notes" [note]="note"></app-note> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <app-note-add></app-note-add>
     </div>
-    
+
+
     
     
     

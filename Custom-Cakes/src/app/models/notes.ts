@@ -30,7 +30,7 @@
 import { Note } from "./note";
 export const NOTES: Note[] =[{
       "id": 1,
-      "title": "weddingcake",
+      "title": "wedding cake",
       "specialInstructions":"none",
       "customerName": "Brayan",
       "orderDay":"May-30 ",
@@ -50,7 +50,7 @@ export const NOTES: Note[] =[{
   },
   {
     "id": 3,
-    "title": "bluecake",
+    "title": "blue cake",
     "specialInstructions":"none",
     "customerName": "Brayan",
     "orderDay":"May-30 ",
