@@ -26,7 +26,7 @@
 *Institution*: Web Development
 
 
-[Link Site] https://github.com/Brayant911/Customs-Cake/edit/main/README.md
+[Link Site] https://brayant911.github.io/Customs-Cake/
 
 
 ![alt text](image.jpg)
