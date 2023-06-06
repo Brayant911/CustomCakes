@@ -15,7 +15,7 @@
       "specialInstructions": "none",
       "customerName": "Brayan",
       "orderDay": "June-5 ",
-      "category": "Special Cake",
+      "category": "Special-Cake",
       "image": "https://images.unsplash.com/photo-1623018035782-b269248df916?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZXJyb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
     },
     {
@@ -24,7 +24,7 @@
       "specialInstructions": "none",
       "customerName": "Brayan",
       "orderDay": "June-5 ",
-      "category": "Wedding Cake",
+      "category": "Wedding-Cake",
       "image": "https://images.unsplash.com/photo-1561702856-b4ec96854ed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
     },
     {
@@ -33,8 +33,18 @@
       "specialInstructions": "none",
       "customerName": "Brayan",
       "orderDay": "June-5 ",
-      "category": "Small Treats",
+      "category": "Small-Treats",
       "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+    },
+    {
+      "id": 4,
+      "title": "retirementcake",
+      "specialInstructions": "none",
+      "customerName": "Brayan",
+      "orderDay": "June-5 ",
+      "category": "Goodbye-Cake",
+      "image": "https://cdn.shopify.com/s/files/1/0144/3266/5648/products/00267_1200x1200.JPG?v=1550680864"
     }
+
   ]
 }

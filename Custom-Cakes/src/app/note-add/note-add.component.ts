@@ -22,7 +22,7 @@ export class NoteAddComponent {
     if (this.note.title !== '') {
       this.noteService.noteAdd(this.note).subscribe({
         next: (data) => {
-          alert("Note Added" )
+          alert('Cake Ordered' )
           this.noteAdded.emit(this.note);
           this.note = {};
         },
